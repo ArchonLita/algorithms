@@ -1,0 +1,21 @@
+{
+  "name": "algorithms",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "bun-types": "latest",
+    "eslint": "^8.53.0",
+    "typescript": "^5.2.2",
+    "prettier": "^3.0.3"
+  },
+  "scripts": {
+    "start": "bun run src/Main.ts",
+    "dev": "bun run --watch src/Main.ts",
+    "build": "bun build --target=bun --outdir=out ./src/Main.ts ",
+    "format": "bun run prettier . --write",
+    "lint": "bun eslint . --ext .ts"
+  }
+}
